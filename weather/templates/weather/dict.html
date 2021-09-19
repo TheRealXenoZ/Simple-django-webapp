@@ -1,0 +1,24 @@
+{% include "weather/header.html" %}
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Dictionary</h1>
+        <form action="" method="GET">
+            <div class="input-group">
+              <input type="dict" class="form-control" name="dict" size="15" placeholder="Enter a word" required>
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-danger">Go</button>
+              </div>
+            </div>
+          </form>
+    </div>
+
+    <p>
+        <div class="jumbotron text-center">
+        <h3>Word : {{word}}</h3>
+        <div>Phonetic: {{phonetic}} </div>
+        <div>Origin: {{origin}} </div>
+        <div>Definition: {{meaning}} </div>
+        </div>
+    </p>
+</body>

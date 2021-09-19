@@ -1,0 +1,22 @@
+{% include "weather/header.html" %}
+
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Weather in your city</h1>
+            <form action="" method="GET">
+                <div class="input-group">
+                  <input type="City" class="form-control" name="cty" size="15" placeholder="Input your city" required>
+                  <div class="input-group-btn">
+                    <button type="submit" class="btn btn-danger">Go</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+        <p>
+            <div class="jumbotron text-center">
+            <h3>The weather in {{city_name}} is: {{description}}</h3>
+            <div>Temperature: {{temperature}} </div>
+            </div>
+        </p>
+    </body>
+</html>
